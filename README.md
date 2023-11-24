@@ -5,8 +5,11 @@ This application, running on command line, allows make the syncrhonization of tw
 SyncFolders [dir_source] [dir_replica] [dir_log] [interval]
 
 dir_source: the source folder to be synchronized
+
 dir_replica: the target folder that should replicate the contents of the source folder
+
 dir_log: the folder where a log file will be placed with the results of the synchronization
+
 interval: the time interval between syncrhonizations
 
 When the application is executed, it does the synchornization every [interval] seconds, on a endless loop.
