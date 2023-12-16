@@ -2,6 +2,7 @@
 A Python application for syncrhonizing two folders
 
 This application, running on command line, allows make the syncrhonization of two folders, by giving as parameters:
+
 SyncFolders -s source -r replica -l logdir -t timeinterval
 
 source: the source folder to be synchronized
