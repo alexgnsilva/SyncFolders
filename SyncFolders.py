@@ -137,7 +137,7 @@ if __name__ == "__main__":
     parser.add_argument('-s', '--source', type=str, help="Source folder", required=True)
     parser.add_argument('-r', '--replica', type=str, help="Replica folder", required=True)
     parser.add_argument('-l', '--logfolder', type=str, help="Log folder", required=True)
-    parser.add_argument('-t', '--timelapse', type=str, help="Time interval", required=True)
+    parser.add_argument('-t', '--timelapse', type=int, help="Time interval", required=True)
     args = parser.parse_args()
     SyncFolders(args.source,args.replica,args.logfolder,args.timelapse).execute()
 
