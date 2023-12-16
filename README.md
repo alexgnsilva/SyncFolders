@@ -2,15 +2,15 @@
 A Python application for syncrhonizing two folders
 
 This application, running on command line, allows make the syncrhonization of two folders, by giving as parameters:
-SyncFolders [dir_source] [dir_replica] [dir_log] [interval]
+SyncFolders -s source -r replica -l logdir -t timeinterval
 
-dir_source: the source folder to be synchronized
+source: the source folder to be synchronized
 
-dir_replica: the target folder that should replicate the contents of the source folder
+replica: the target folder that should replicate the contents of the source folder
 
-dir_log: the folder where a log file will be placed with the results of the synchronization
+logdir: the folder where a log file will be placed with the results of the synchronization
 
-interval: the time interval between syncrhonizations
+timeinterval: the time interval between syncrhonizations
 
 When the application is executed, it does the synchornization every [interval] seconds, on a endless loop.
 It first verifies if the replica folder contains files and sub-folders that do not exist on source, and deletes them
